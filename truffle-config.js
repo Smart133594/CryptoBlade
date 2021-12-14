@@ -52,7 +52,7 @@ module.exports = {
     // options below to some value.
     //
     development: {
-      host: process.env.ETH_DEV_RPC_HOST || '101.99.93.34',     // Localhost (default: none)
+      host: process.env.ETH_DEV_RPC_HOST || '192.168.107.173',     // Localhost (default: none)
       port: process.env.ETH_DEV_RPC_PORT || 7545,            // Standard Ethereum port (default: none)
       network_id: process.env.ETH_DEV_RPC_NETWORK_ID || '*',       // Any network (default: none)
       gas: parseInt(process.env.ETH_DEV_RPC_GAS, 10) || 67219750 // required for deploy, otherwise it throws weird require-errors on constructor
@@ -62,7 +62,7 @@ module.exports = {
         process.env.BINANCE_WALLET_PRIVATE_KEY,
         process.env.BINANCE_WALLET_MNEMONIC,
         {
-          providerOrUrl: 'https://data-seed-prebsc-2-s2.binance.org:8545/'
+          providerOrUrl: 'http://data-seed-prebsc-2-s2.binance.org:8545/'
         }
       )),
       network_id: 0x61,
